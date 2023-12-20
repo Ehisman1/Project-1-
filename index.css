@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "B", sans-serif; */
+}
+
+/*--------------- starts here---------------- */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.box {
+  box-sizing: border-box;
+  margin-right: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+}
+img {
+  top: 0;
+  width: 77.33px;
+  height: 80px;
+}
+
+#first-box {
+  width: 460px;
+  height: 270px;
+  border: none;
+  background: rgb(245, 255, 253);
+}
+#first-box h1 {
+  font-size: 40px;
+  color: black;
+  font-weight: 700;
+  font-family: "Brown", sans-serif;
+  margin-top: 20px;
+}
+#first-box p {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Brown", sans-serif;
+  margin-top: 20px;
+  max-width: 450px;
+}
+
+#second-box {
+  width: 580px;
+  height: 679px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.twin-inputs {
+  display: flex;
+  padding: 20px;
+}
+
+.in-box {
+  width: 238px;
+  height: 72px;
+}
+
+#mr {
+  margin-left: 30px;
+}
+
+label {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  font-family: "Sofia Pro", sans-serif;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.inp-1 {
+  height: 48px;
+  width: 238px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font: 400;
+  line-height: 20px;
+  color: #737373;
+}
+
+.in-box-2 {
+  width: 500px;
+  height: 72px;
+
+  margin-left: 25px;
+}
+
+.inp-2 {
+  height: 48px;
+  width: 500px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font: 400;
+  line-height: 20px;
+  color: #737373;
+  border: 0.4px solid #038e7d;
+}
+
+.inp-1 {
+  border: 1px solid #038e7d;
+}
+
+.btn {
+  margin-left: 26px;
+  width: 500px;
+  height: 72px;
+  background: #038e7d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Sofia Pro";
+  border: none;
+  margin-top: 20px;
+}
+
+.end {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 25px;
+  font-family: "Sofia Pro", sans-serif;
+}
+
+.end p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  color: #1d2c3c;
+}
+
+.dont {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #038e7d;
+  margin-left: 5px;
+}
+
+#activity {
+  margin-bottom: 10px;
+}
+
+/*------------------------ Media queries for smaller screens-------------------- */
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 20px;
+  }
+
+  .box {
+    margin: 0 auto 20px auto;
+    width: 90%;
+    height: 100%S;
+  }
+
+  #first-box,
+  #second-box {
+    width: 90%;
+    height: 100%;
+  }
+
+  .twin-inputs {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .in-box,
+  .in-box-2 {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .btn {
+    width: 90%;
+    margin: 0px 0px 0px 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+  }
+
+  #ml {
+    margin-left: 10px;
+  }
+
+  #mr {
+    margin-left: 10px;
+  }
+  .inp-1 {
+    width: 338px;
+  }
+  .inp-2 {
+    width: 338px;
+  }
+  .end {
+    margin-top: 15px;
+    padding: 0px 0px 0px 10px;
+    margin-left: 22px;
+    max-width: 384px;
+    margin-bottom: 15px;
+  }
+}
+
+/*------------------------ Media queries for smaller screens-------------------- */
+@media screen and (max-width: 540px) {
+  .inp-1 {
+    width: 383px;
+  }
+  .inp-2 {
+    width: 383px;
+  }
+}
+
+/*------------------------ Media queries for smaller screens-------------------- */
+@media screen and (max-width: 450px) {
+  /* 
+  #ml {
+    margin-left: 10px;
+  }
+
+  #mr {
+    margin-left: 10px;
+  } */
+  .inp-1 {
+    width: 280px;
+  }
+  .inp-2 {
+    width: 280px;
+  }
+  .activate {
+    margin-left: 7px;
+  }
+  .end p,
+  .dont {
+    font-size: 14px;
+    margin-left: -10px;
+  }
+}
+/*------------------------ Media queries for smaller screens-------------------- */
+@media screen and (max-width: 390px) {
+  .inp-1 {
+    width: 258px;
+  }
+  .inp-2 {
+    width: 258px;
+  }
+
+  .activate {
+    margin-left: 7px;
+  }
+  .end {
+    max-width: 265px;
+  }
+  .end p,
+  .dont {
+    font-size: 11px;
+  }
+}
+
+/*------------------------ Media queries for smaller screens-------------------- */
+@media screen and (max-width: 375px) {
+  .inp-1 {
+    width: 246px;
+  }
+  .inp-2 {
+    width: 246px;
+  }
+  .end {
+    max-width: 258px;
+  }
+}
+
+/*------------------------ Media queries for smaller screens-------------------- */
+@media screen and (max-width: 360px) {
+  .inp-1 {
+    width: 230px;
+  }
+  .inp-2 {
+    width: 230px;
+  }
+  .end {
+    max-width: 235px;
+  }
+
+  .end p,
+  .dont {
+    font-size: 11px;
+  }
+
+  .btn {
+    width: 86%;
+  }
+}
